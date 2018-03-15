@@ -1,0 +1,43 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TfrmSQLEditor : public TForm
+{
+__published:	// Von der IDE verwaltete Komponenten
+	TButton *btnBeenden;
+	TLabel *lbBefehle;
+	TButton *btnAusführen;
+	TRichEdit *RtxtOutput;
+	TMainMenu *MainMenu1;
+	TMenuItem *Datei1;
+	TMenuItem *Datenbankffnen1;
+	TMenuItem *NeueDatenbank1;
+	TOpenDialog *ODialog;
+	TSaveDialog *SDialog;
+	TButton *Button1;
+	TButton *Button2;
+	TButton *Button3;
+	TButton *Button4;
+	TButton *Button5;
+	TButton *Button7;
+	TButton *Button8;
+	TListBox *lbxDatenfelder;
+
+private:	// Benutzer-Deklarationen
+public:		// Benutzer-Deklarationen
+	__fastcall TfrmSQLEditor(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TfrmSQLEditor *frmSQLEditor;
+//---------------------------------------------------------------------------
+#endif

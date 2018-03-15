@@ -1,0 +1,151 @@
+﻿object frmSQLEditor: TfrmSQLEditor
+  Left = 0
+  Top = 0
+  Caption = 'SQL-Editor'
+  ClientHeight = 657
+  ClientWidth = 780
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbBefehle: TLabel
+    Left = 24
+    Top = 8
+    Width = 145
+    Height = 13
+    Alignment = taCenter
+    Caption = 'Befehle'
+  end
+  object btnBeenden: TButton
+    Left = 697
+    Top = 624
+    Width = 75
+    Height = 25
+    Caption = 'Beenden'
+    TabOrder = 0
+  end
+  object btnAusführen: TButton
+    Left = 592
+    Top = 177
+    Width = 81
+    Height = 33
+    Caption = 'Ausf'#252'hren'
+    TabOrder = 1
+  end
+  object RtxtOutput: TRichEdit
+    Left = 264
+    Top = 32
+    Width = 329
+    Height = 113
+    BorderWidth = 1
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'RtxtOutput')
+    ParentFont = False
+    TabOrder = 2
+    Zoom = 100
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 41
+    Width = 97
+    Height = 25
+    Caption = 'Select'
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 24
+    Top = 72
+    Width = 97
+    Height = 25
+    Caption = 'From'
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 24
+    Top = 103
+    Width = 97
+    Height = 25
+    Caption = 'Insert'
+    TabOrder = 5
+  end
+  object Button4: TButton
+    Left = 24
+    Top = 134
+    Width = 97
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 6
+  end
+  object Button5: TButton
+    Left = 135
+    Top = 289
+    Width = 50
+    Height = 25
+    Caption = 'ASC   \/'
+    TabOrder = 7
+  end
+  object TButton
+    Left = 135
+    Top = 41
+    Width = 50
+    Height = 25
+    Caption = '  *  '
+    TabOrder = 8
+  end
+  object Button7: TButton
+    Left = 135
+    Top = 258
+    Width = 50
+    Height = 25
+    Caption = 'DESC /\'
+    TabOrder = 9
+  end
+  object Button8: TButton
+    Left = 24
+    Top = 258
+    Width = 97
+    Height = 25
+    Caption = 'Order By'
+    TabOrder = 10
+  end
+  object lbxDatenfelder: TListBox
+    Left = 135
+    Top = 72
+    Width = 121
+    Height = 138
+    ItemHeight = 13
+    TabOrder = 11
+  end
+  object MainMenu1: TMainMenu
+    Left = 728
+    Top = 16
+    object Datei1: TMenuItem
+      Caption = 'Datei'
+      object NeueDatenbank1: TMenuItem
+        Caption = 'Neue Datei...'
+      end
+      object Datenbankffnen1: TMenuItem
+        Caption = 'Datei '#246'ffnen...'
+      end
+    end
+  end
+  object ODialog: TOpenDialog
+    Left = 728
+    Top = 72
+  end
+  object SDialog: TSaveDialog
+    Left = 728
+    Top = 128
+  end
+end
